@@ -1,0 +1,270 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> STOCKBUDDY </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#2C2627">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static 'event/images/icons/favicon.ico' %}" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'event/vendor/bootstrap/css/bootstrap.min.css' %}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'event/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'event/vendor/animate/animate.css' %}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'event/vendor/select2/select2.min.css' %}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'event/vendor/perfect-scrollbar/perfect-scrollbar.css' %}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'res/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'res/css/main.css' %}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+	<!--===============================================================================================-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<!-- <script src="{% static 'js/tablesorter.windgets.min.js' %}"></script> -->
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129276229-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-129276229-1');
+	</script>
+
+</head>
+
+<body>
+<!--	<header>
+		<nav class="navbar navbar-expand-md navbar navbar-dark bg-dark navbar sticky-top">
+			<div class="container-fluid">
+				<span class="navbar-brand mb-0 h1" id="heading">SAMATVA COLLEGE UNION</span>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+
+							<ul class="navbar-nav ml-auto">
+								<!--		<li class="nav-item active">
+						 	 <a class="nav-link" href="#">Results</a>
+								</li>
+						</ul>
+                </div>
+			</div>
+		</nav>
+	</header>-->
+
+	<div class="event">
+
+
+
+		<div class="limiter">
+			<div class="container-table100">
+				<div class="wrap-table100">
+					<div class="table100">
+
+
+
+						<h1 class="Dheading display-5" id="event_list">STOCKBUDDY</h1>
+					<!--	<p id='sc_br_r' style="text-align:center;"></p>-->
+						<br>
+						<table id="sc_br">
+							<thead>
+								<tr class="table100-head">
+									<th class="column2">Index</th>
+									<th class="column2">Current Point</th>
+                  <th>Analysis</th>
+
+							</thead>
+							<tbody>
+								<tr>
+									<td id='y' class="column2">NSE:INFY</td>
+									<td id='p' class="column2">583.1500</td>
+                  <td>Do not Buy. <br> All indicators are showing bad signals.</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<br>
+
+            <div id="graphcontainer"></div>
+<br>
+            <table id="sc_br">
+							<thead>
+								<tr class="table100-head">
+									<th class="column2">Related News</th>
+									<th class="column2">Analysis</th>
+
+							</thead>
+							<tbody>
+								<tr>
+									<td id='y' class="column2">Coronavirus update: Infosys evacuates one building as precautionary measure</td>
+									<td id='p' class="column2">Bad</td>
+								</tr>
+                <tr>
+									<td id='y' class="column2">Fix filing issues by July: GST panel to Infosys</td>
+									<td id='p' class="column2">Bad</td>
+								</tr>
+							</tbody>
+						</table>
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+
+            <script type="text/javascript">
+              Highcharts.chart('graphcontainer', {
+
+    title: {
+      text: 'NSE:INFY Stock Graph TIME_SERIES_DAILY_ADJUSTED'
+    },
+
+    subtitle: {
+        text: ''
+    },
+
+    yAxis: {
+        title: {
+            text: 'Adjusted Close'
+        }
+    },
+
+    xAxis: {
+      categories: ['2020-03-04','2020-03-05','2020-03-06', '2020-03-09', '2020-03-11', '2020-03-12', '2020-03-13', '2020-03-16']
+    },
+
+    series: [{
+        name: 'INFY',
+        data: [758.7500, 754.6000, 738.9500, 704.4500, 686.0000, 631.2000, 642.3500, 583.1500]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});
+            </script>
+					<!--	<h1 class="display-5" id="event_list"> Onstage Results</h1>
+						<br>
+						<table>
+							<thead>
+								<tr class="table100-head">
+									<th class="column2">Event</th>
+									<th class="column2">First</th>
+									<th class="column2">Second</th>
+									<th class="column2">Third</th>
+
+							</thead>
+							<tbody>
+								{% for events in onresult %}
+								<tr>
+									<td class="column2">{{events.event_name}}</td>
+									<td class="column2">{{ events.first_prize|linebreaksbr }}</td>
+									<td class="column2">{{ events.second_prize|linebreaks }}</td>
+									<td class="column2">{{ events.third_prize|linebreaks }}</td>
+								</tr>
+								{% endfor %}
+
+							</tbody>
+						</table>
+						<br>
+						<h1 class="display-5" id="event_list"> Offstage Results</h1>
+						<br>
+						<table>
+							<thead>
+								<tr class="table100-head">
+									<th class="column2">Event</th>
+									<th class="column2">First</th>
+									<th class="column2">Second</th>
+									<th class="column2">Third</th>
+
+							</thead>
+							<tbody>
+								{% for events in offresult %}
+								<tr>
+									<td class="column2">{{events.event_name}}</td>
+									<td class="column2">{{ events.first_prize|linebreaksbr }}</td>
+									<td class="column2">{{ events.second_prize|linebreaks }}</td>
+									<td class="column2">{{ events.third_prize|linebreaks }}</td>
+								</tr>
+								{% endfor %}
+
+							</tbody>
+						</table> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--<footer>
+		<div class="bg-dark footer-bottom text-center">
+			Made With <img src="{% static "./img/redheart.png"%}" style="height:25px;width:25px"> at GEC Palakkad <br> ./tech_team : <a href="https://github.com/rejuls/daksha18"><img src="{% static "./img/GitHub_Logo_White.png"%}"
+					style="height:150;width:62px"></a>
+		</div>
+	</footer>-->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+<!--===============================================================================================-->
+<script src="{% static 'event/vendor/jquery/jquery-3.2.1.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'event/vendor/bootstrap/js/popper.js'%}"></script>
+<script src="{% static 'event/vendor/bootstrap/js/bootstrap.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'event/vendor/select2/select2.min.js'%}"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/tablesorter.min.js' %}"></script>
+<!--===============================================================================================-->
+<script>
+	$(function() {
+		$("#sc_br").tablesorter({
+			sortList: [
+				[1, 1],
+			]
+		});
+		var f = parseInt($('#sc_br tbody tr:first-child #p').text());
+		var s = parseInt($('#sc_br tbody tr:nth-child(2) #p').text());
+		var y = $('#sc_br tbody tr:first-child #y').text();
+		var d = f - s;
+		$('#sc_br_r').text(y + " leads by " + d + " points");
+	});
+</script>
+
+
+
+</body>
+
+</html>
