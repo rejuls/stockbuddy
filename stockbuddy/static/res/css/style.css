@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Rajdhani', sans-serif;
-  background-color: #252529;
+background: #1565C0;
   margin: 0;
   color: #fff;
   line-height: 1.6;
@@ -305,15 +305,15 @@ nav a#openup {
   margin: auto;
 
   display: flex;
-  
+
   position: relative;
-  
+
   justify-content: center;
-  
+
   align-content: center;
-  
+
   align-items: center;
-  
+
   width: 75%;
   text-align: center;
 

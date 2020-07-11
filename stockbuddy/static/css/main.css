@@ -1,15 +1,11 @@
-
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
-
-
 @font-face {
   font-family: OpenSans-Regular;
   src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
 }
 
-.cover{
+.cover {
   margin: auto;
   background: #2C2627;
   width: fit-content;
@@ -17,59 +13,63 @@
   border-radius: 10px;
 }
 
-#graphcontainer{
-border-radius: 10px;
+#graphcontainer {
+  border-radius: 10px;
 }
 
-.col1{
+.col1 {
   width: 70%;
 }
 
-.col2{
+.col2 {
   width: 70%;
 }
 
-button.login{
+button.login {
   background: white;
-  padding: 4px 15px ;
+  padding: 4px 15px;
   border-radius: 10px;
 }
 
 .highcharts-figure, .highcharts-data-table table {
-    min-width: 360px;
-    max-width: 800px;
-    margin: 1em auto;
+  min-width: 360px;
+  max-width: 800px;
+  margin: 1em auto;
 }
 
 .highcharts-data-table table {
-	font-family: Verdana, sans-serif;
-	border-collapse: collapse;
-	border: 1px solid #EBEBEB;
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #EBEBEB;
   border-radius: 10px;
-	margin: 10px auto;
-	text-align: center;
-	width: 100%;
-	max-width: 500px;
-}
-.highcharts-data-table caption {
-    padding: 1em 0;
-    font-size: 1.2em;
-    color: #555;
-}
-.highcharts-data-table th {
-	font-weight: 600;
-    padding: 0.5em;
-}
-.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
-    padding: 0.5em;
-}
-.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
-    background: #f8f8f8;
-}
-.highcharts-data-table tr:hover {
-    background: #f1f7ff;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
 }
 
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
@@ -87,7 +87,6 @@ body, html {
   background: -o-linear-gradient(45deg, #4158d0, #c850c0);
   background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
   background: linear-gradient(45deg, #4158d0, #c850c0);*/
-
 }
 
 /* ------------------------------------ */
@@ -108,15 +107,18 @@ a:hover {
 }
 
 /* ------------------------------------ */
-h1,h2,h3,h4,h5,h6 {margin: 0px;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
 
-p {margin: 0px;}
+p {
+  margin: 0px;
+}
 
 ul, li {
   margin: 0px;
   list-style-type: none;
 }
-
 
 /* ------------------------------------ */
 input {
@@ -149,17 +151,8 @@ iframe {
   border: none !important;
 }
 
-
-
-
 /*//////////////////////////////////////////////////////////////////
 [ Utiliti ]*/
-
-
-
-
-
-
 /*//////////////////////////////////////////////////////////////////
 [ Table ]*/
 /*.event{
@@ -170,26 +163,24 @@ iframe {
   background: linear-gradient(45deg, #2C2627, #BC2C3D);
   }
 }*/
-
-.event{
-  background:#BC2C3D;
+.event {
+  background: #BC2C3D;
 }
-#event_list{
+
+#event_list {
   text-align: center;
-  color:#ffffff;
-  font-family:'Rajdhani',sans-serif;
-
+  color: #ffffff;
+  font-family: 'Rajdhani', sans-serif;
 }
+
 .limiter {
   width: 100%;
   margin: 0 auto;
 }
 
-
 .container-table100 {
-  width: 100%;
-  min-height: 100vh;
- /* background: #c850c0;
+  width: 75%;
+  /* background: #c850c0;
   background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
   background: -o-linear-gradient(45deg, #4158d0, #c850c0);
   background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
@@ -206,7 +197,6 @@ iframe {
   padding: 33px 30px;
 }
 
-
 .wrap-table100 {
   width: 1170px;
 }
@@ -221,37 +211,45 @@ table {
   margin: 0 auto;
   position: relative;
 }
+
 table * {
   position: relative;
 }
+
 table td, table th {
   padding-left: 8px;
 }
+
 table thead tr {
   height: 60px;
   background: #2C2627;
 }
+
 table tbody tr {
   height: 50px;
 }
+
 table tbody tr:last-child {
   border: 0;
 }
+
 table td, table th {
   text-align: center;
 }
+
 table td.l, table th.l {
   text-align: right;
 }
+
 table td.c, table th.c {
   text-align: center;
 }
+
 table td.r, table th.r {
   text-align: center;
 }
 
-
-.table100-head th{
+.table100-head th {
   font-family: OpenSans-Regular;
   font-size: 18px;
   color: #fff;
@@ -271,6 +269,10 @@ tbody tr {
   font-weight: unset;
 }
 
+tbody tr a {
+  color: #2C2627;
+}
+
 tbody tr:hover {
   color: #555555;
   background-color: #f5f5f5;
@@ -282,8 +284,7 @@ tbody tr:hover {
   padding-left: 40px;
 }
 
-.column2 {
-}
+.column2 {}
 
 /*.column3 {
   width: 245px;
@@ -304,29 +305,33 @@ tbody tr:hover {
   text-align: right;
   padding-right: 62px;
 }*/
-
-
 @media screen and (max-width: 992px) {
   table {
     display: block;
   }
-  table > *, table tr, table td, table th {
+
+  table>*, table tr, table td, table th {
     display: block;
   }
+
   table thead {
     display: none;
   }
+
   table tbody tr {
     height: auto;
     padding: 25px 0;
   }
+
   table tbody tr td {
     padding-left: 10% !important;
     margin-bottom: 24px;
   }
+
   table tbody tr td:last-child {
     margin-bottom: 0;
   }
+
   table tbody tr td:before {
     font-family: OpenSans-Regular;
     font-size: 14px;
@@ -338,26 +343,33 @@ tbody tr:hover {
     left: 10px;
     top: 0;
   }
+
   table tbody tr td:nth-child(1):before {
     content: "Event";
   }
+
   table tbody tr td:nth-child(2):before {
     content: "First";
   }
+
   table tbody tr td:nth-child(3):before {
     content: "Second";
   }
+
   table tbody tr td:nth-child(4):before {
     content: "Third";
   }
+
   #sc_br tbody tr td:nth-child(1):before {
-    content:'Index';
+    content: 'Index';
   }
+
   #sc_br tbody tr td:nth-child(2):before {
-    content:' Current Point';
+    content: ' Current Point';
   }
-  }
-  /*table tbody tr td:nth-child(4):before {
+}
+
+/*table tbody tr td:nth-child(4):before {
     content: "Price";
   }
   table tbody tr td:nth-child(5):before {
@@ -381,10 +393,9 @@ tbody tr:hover {
   .column3 {
     width: 100%;
   }*/
-
-  tbody tr {
-    font-size: 14px;
-  }
+tbody tr {
+  font-size: 14px;
+}
 }
 
 @media (max-width: 576px) {

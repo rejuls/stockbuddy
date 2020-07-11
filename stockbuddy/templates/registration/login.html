@@ -75,146 +75,20 @@
 
 
 		<div class="limiter">
-			<div class="container-table100">
+			<div class="fullsize container-table100">
 				<div class="wrap-table100">
 					<div class="table100">
-
-
-
 						<h1 class="Dheading display-5" id="event_list">STOCKBUDDY</h1>
 					<!--	<p id='sc_br_r' style="text-align:center;"></p>-->
 						<br>
-						<table id="sc_br">
-							<thead>
-								<tr class="table100-head">
-									<th class="column2">Index</th>
-									<th class="column2">Current Point</th>
-                  <th>Analysis</th>
-
-							</thead>
-							<tbody>
-								<tr>
-									<td id='y' class="column2">NSE:INFY</td>
-									<td id='p' class="column2">583.1500</td>
-                  <td>Do not Buy. <br> All indicators are showing bad signals.</td>
-								</tr>
-							</tbody>
-						</table>
-
-						<br>
-
-            <div id="graphcontainer"></div>
-<br>
-            <table id="sc_br">
-							<thead>
-								<tr class="table100-head">
-									<th class="column2">Related News</th>
-									<th class="column2">Analysis</th>
-
-							</thead>
-							<tbody>
-								<tr>
-									<td id='y' class="column2">Coronavirus update: Infosys evacuates one building as precautionary measure</td>
-									<td id='p' class="column2">Bad</td>
-								</tr>
-                <tr>
-									<td id='y' class="column2">Fix filing issues by July: GST panel to Infosys</td>
-									<td id='p' class="column2">Bad</td>
-								</tr>
-							</tbody>
-						</table>
-            <script src="https://code.highcharts.com/highcharts.js"></script>
-
-            <script type="text/javascript">
-              Highcharts.chart('graphcontainer', {
-
-    title: {
-      text: 'NSE:INFY Stock Graph TIME_SERIES_DAILY_ADJUSTED'
-    },
-
-    subtitle: {
-        text: ''
-    },
-
-    yAxis: {
-        title: {
-            text: 'Adjusted Close'
-        }
-    },
-
-    xAxis: {
-      categories: ['2020-03-04','2020-03-05','2020-03-06', '2020-03-09', '2020-03-11', '2020-03-12', '2020-03-13', '2020-03-16']
-    },
-
-    series: [{
-        name: 'INFY',
-        data: [758.7500, 754.6000, 738.9500, 704.4500, 686.0000, 631.2000, 642.3500, 583.1500]
-    }],
-
-    responsive: {
-        rules: [{
-            condition: {
-                maxWidth: 500
-            },
-            chartOptions: {
-                legend: {
-                    layout: 'horizontal',
-                    align: 'center',
-                    verticalAlign: 'bottom'
-                }
-            }
-        }]
-    }
-
-});
-            </script>
-					<!--	<h1 class="display-5" id="event_list"> Onstage Results</h1>
-						<br>
-						<table>
-							<thead>
-								<tr class="table100-head">
-									<th class="column2">Event</th>
-									<th class="column2">First</th>
-									<th class="column2">Second</th>
-									<th class="column2">Third</th>
-
-							</thead>
-							<tbody>
-								{% for events in onresult %}
-								<tr>
-									<td class="column2">{{events.event_name}}</td>
-									<td class="column2">{{ events.first_prize|linebreaksbr }}</td>
-									<td class="column2">{{ events.second_prize|linebreaks }}</td>
-									<td class="column2">{{ events.third_prize|linebreaks }}</td>
-								</tr>
-								{% endfor %}
-
-							</tbody>
-						</table>
-						<br>
-						<h1 class="display-5" id="event_list"> Offstage Results</h1>
-						<br>
-						<table>
-							<thead>
-								<tr class="table100-head">
-									<th class="column2">Event</th>
-									<th class="column2">First</th>
-									<th class="column2">Second</th>
-									<th class="column2">Third</th>
-
-							</thead>
-							<tbody>
-								{% for events in offresult %}
-								<tr>
-									<td class="column2">{{events.event_name}}</td>
-									<td class="column2">{{ events.first_prize|linebreaksbr }}</td>
-									<td class="column2">{{ events.second_prize|linebreaks }}</td>
-									<td class="column2">{{ events.third_prize|linebreaks }}</td>
-								</tr>
-								{% endfor %}
-
-							</tbody>
-						</table> -->
+						<div class="cover">
+            <h2>Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="login" type="submit">Login</button>
+		</div>
+  </form>
 					</div>
 				</div>
 			</div>

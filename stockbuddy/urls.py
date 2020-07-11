@@ -6,5 +6,5 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('', views.stock_view, name='home'),
-    path('INFY/', views.stockdetail_view, name='detailed'),
+    path('stock/<str:symbol>', views.stockdetail_view, name='detailed'),
 ]

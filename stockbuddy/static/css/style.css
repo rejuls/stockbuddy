@@ -1,20 +1,4 @@
-span#heading{
-  margin: auto;
-}
 
-.Dheading{
-  font-size: 4rem;
-  text-align: center;
-}
-
-p#sc_br_r{
-  font-size: 1.5rem;
-}
-
-.bg-dark{
-  background-color: #2C2627!important;
-
-}
 
 /* CSS Variables */
 :root {
@@ -31,7 +15,7 @@ p#sc_br_r{
 
 body {
   font-family: 'Rajdhani', sans-serif;
-  background-color: #252529;
+  background: #1565C0;
   margin: 0;
   color: #fff;
   line-height: 1.6;

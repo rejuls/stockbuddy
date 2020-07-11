@@ -286,3 +286,4 @@ stockbuddy/media/
 
 .env
 .envs/*
+bestmodel.pt

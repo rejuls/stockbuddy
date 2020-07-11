@@ -65,6 +65,7 @@ DJANGO_APPS = [
     # "django.contrib.humanize", # Handy template tags
     "django.contrib.admin",
     "django.forms",
+    "stockbuddy",
 ]
 THIRD_PARTY_APPS = [
     "crispy_forms",
@@ -270,5 +271,5 @@ SOCIALACCOUNT_ADAPTER = "stockbuddy.users.adapters.SocialAccountAdapter"
 
 # Your stuff...
 # ------------------------------------------------------------------------------
-LOGIN_REDIRECT_URL = 'stockbuddy:home'
-LOGOUT_REDIRECT_URL = 'stockbuddy:home'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
