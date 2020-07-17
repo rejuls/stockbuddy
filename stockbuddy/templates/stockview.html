@@ -93,9 +93,9 @@
 									<td id='y' class="column2">NSE:{{symbol}}</td>
 									<td id='p' class="column2">{{ltp}}</td>
 									<td>{{ mlquery|first }}</td>
-									{%if analysisscore >= 8 %}
+									{%if analysisscore >= 4 %}
 									<td id='p' class="column2">Bullish Trend. Buy the stock</td>
-									{% elif analysisscore >= 3 %}
+									{% elif analysisscore >= 1.5 %}
 									<td id='p' class="column2">Sideways Trend. Hold the stock</td>
 									{% else %}
 									<td id='p' class="column2">Bearish Trend. Sell or Short the stock</td>

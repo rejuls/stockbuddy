@@ -14,7 +14,7 @@ def Arima(symbol):
 	infy = yf.Ticker("%s.NS" % symbol)
 	dataset = infy.history(period="5y")
 	dataset.index = range(len(dataset))
-	model = ARIMA(dataset['Close'], order=(15,1,3))
+	model = ARIMA(dataset['Close'], order=(20,1,3))
 	model_fit = model.fit()
 	x=model_fit.forecast(3)
 	y=list(x[0])

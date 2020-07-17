@@ -54,6 +54,7 @@ def analysis(score,percentchange):
 		newsmark=3
 	else:
 		newsmark=0
+	newsmark=newsmark*0.25
 
 	if percentchange>=3:
 		mlmark=5
@@ -61,6 +62,8 @@ def analysis(score,percentchange):
 		mlmark=0
 	else:
 		mlmark=3
+	percentchange=percentchange*0.75
+	
 	return newsmark+mlmark
 
 def stockdetail_view(request,symbol):
