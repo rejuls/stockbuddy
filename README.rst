@@ -94,5 +94,6 @@ See detailed `cookiecutter-django Heroku documentation`_.
 .. _`cookiecutter-django Heroku documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-on-heroku.html
 
 
+Shoot me a mail at s.rejul10@gmail.com for the trained NLP FLAIR file
 
 
