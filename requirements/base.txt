@@ -14,7 +14,7 @@ django-allauth==0.41.0  # https://github.com/pennersr/django-allauth
 django-crispy-forms==1.9.0  # https://github.com/django-crispy-forms/django-crispy-forms
 django-redis==4.11.0  # https://github.com/niwinz/django-redis
 yfinance==0.1.54 #https://pypi.org/project/yfinance/
-lxml==4.5.1
+lxml==4.6.2
 numpy==1.18.5
 pandas==1.0.4
 requests==2.23.0
